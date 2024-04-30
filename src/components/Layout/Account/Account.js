@@ -19,13 +19,18 @@ export function Account() {
 
   return (
     <div className={styles.account}>
-      <Button icon className={styles.cart}>
+      {/* <Button icon className={styles.cart}>
         <Icon name="cart" onClick={goToCart} />
         {total > 0 && <Label circular>{total}</Label>}
-      </Button>
+      </Button> */}
 
-      <Button icon className={classNames({ [styles.user]: user })}>
-        <Icon name="user outline" onClick={user ? goToAccount : goToLogin} />
+      <Button
+        icon
+        className={classNames({ [styles.user]: user })}
+        onClick={user ? goToAccount : goToLogin}
+      >
+        <span className={styles.name}>{user ? user.username : "Ingresar"}</span>
+        <Icon name="user outline" />
       </Button>
     </div>
   );

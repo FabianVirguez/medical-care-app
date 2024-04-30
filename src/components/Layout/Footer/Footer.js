@@ -9,7 +9,7 @@ export function Footer() {
         <div className={styles.columns}>
           <div>
             <Link href="/">
-              <Image src="/images/logo.png" alt="Gaming" />
+              <Image src="/images/logo-medical-without-bg.png" alt="logo" />
             </Link>
           </div>
 
@@ -31,7 +31,9 @@ export function Footer() {
         </div>
 
         <div className={styles.copyright}>
-          <span>Copyright © 2023 Gaming - All rights reserved</span>
+          <span>
+            Copyright © 2024 Project PMI Medical Care - All rights reserved
+          </span>
         </div>
       </Container>
     </div>

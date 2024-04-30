@@ -4,17 +4,29 @@
   display: flex;
 
   button {
+    display: inline-flex !important;
     background-color: transparent !important;
     margin-left: 10px !important;
 
     &:hover {
-      > i {
-        color: $primary;
+      border: 2px solid $border-tertiary !important;
+      i,
+      span {
+        color: $second-hover;
+        cursor: pointer;
       }
     }
 
+    .name {
+      font-size: 16px;
+      color: $text-secondary;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      margin-right: 4px;
+    }
+
     > i {
-      font-size: 18px;
+      font-size: 20px;
       height: 20px !important;
       display: flex;
       align-items: center;

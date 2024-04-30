@@ -7,15 +7,16 @@
   .field {
     .ui.input {
       input {
-        border: 2px solid $border-primary;
-        background-color: $background-secondary;
-        color: $text-primary;
+        border: 1px solid $border-primary;
+        background-color: $background-primary;
+        color: $text-secondary;
         padding: 14px;
         border-radius: 6px;
 
         &:hover,
         &:active,
         &:focus {
+          background-color: $background-secondary;
           border-color: $primary;
         }
       }

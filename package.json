@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce-app",
+  "name": "medical-care-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -30,6 +30,7 @@
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.4",
     "slick-carousel": "^1.8.1",
-    "yup": "^1.0.0"
+    "yup": "^1.0.0",
+    "semantic-ui-react-button-pagination": "1.0.3"
   }
 }

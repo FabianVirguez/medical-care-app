@@ -2,7 +2,7 @@
 @import "./semantic-ui/index.scss";
 
 * {
-  color: $text-primary;
+  color: $text-secondary;
 }
 
 body {
@@ -23,7 +23,7 @@ p {
 }
 
 a {
-  color: $text-primary;
+  color: $text-secondary;
 
   &:hover {
     color: $primary;

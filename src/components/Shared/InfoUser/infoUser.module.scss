@@ -1,0 +1,28 @@
+@import "~/src/scss/index.scss";
+
+.infoUserContent {
+  margin: 1rem;
+
+  .infoUser {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    margin: 1rem 0;
+
+    .item {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      label {
+        color: $text-secondary;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0.5rem 0;
+      }
+      span {
+        color: $text-secondary;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}

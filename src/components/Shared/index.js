@@ -10,3 +10,4 @@ export * from "./Pagination";
 export * from "./WishlistIcon";
 export * from "./FullModal";
 export * from "./Seo";
+export * from "./InfoUser";

@@ -11,22 +11,15 @@
     #154483 29%,
     #0f0f1b 73%
   );
-
-  &::after {
-    content: "";
-    background-color: $background-primary;
-    position: absolute;
-    bottom: -1px;
-    height: 60px;
-    width: 100%;
-    clip-path: polygon(0 100%, 100% 100%, 0 0);
-  }
 }
 
 .containerImage {
-  display: flex !important;
+  width: 100%;
+  display: inline-flex !important;
   justify-content: flex-end;
-  padding-top: 30px;
+  img {
+    mask-image: linear-gradient(to left, #489bca 50%, transparent);
+  }
 }
 
 .infoContainer {
@@ -38,9 +31,17 @@
   display: flex;
   align-items: center;
 
+  h2,
+  h3 {
+    color: $text-primary;
+  }
+  h2 {
+    margin-bottom: 6px;
+    font-size: 26px;
+  }
   h3 {
     font-weight: normal;
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 24px;
   }
 }

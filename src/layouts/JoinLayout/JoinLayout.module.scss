@@ -19,7 +19,7 @@
 
   > a {
     > img {
-      height: 30px;
+      height: 80px;
     }
 
     > i {
@@ -38,9 +38,10 @@
 }
 
 .blockRight {
-  background-image: url("/images/sign-wallpaper.jpg");
+  background-image: url("/images/img-sign-in.webp");
   background-position: center;
   background-size: cover;
   height: 100%;
   width: 50%;
+  mask-image: linear-gradient(to left, $background-primary 80%, transparent);
 }

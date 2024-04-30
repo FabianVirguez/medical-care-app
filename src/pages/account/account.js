@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Tab } from "semantic-ui-react";
+import { Container, Tab } from "semantic-ui-react";
 import { useRouter } from "next/router";
 import { BasicLayout } from "@/layouts";
 import { useAuth } from "@/hooks";
@@ -10,7 +10,7 @@ import {
   Wishlist,
   Orders,
 } from "@/components/Account";
-import { Separator, Seo } from "@/components/Shared";
+import { Separator, Seo, InfoUser } from "@/components/Shared";
 import styles from "./account.module.scss";
 
 export default function AccountPage() {
@@ -83,12 +83,11 @@ export default function AccountPage() {
 
       <BasicLayout isContainer relative>
         <Info />
-
-        <Tab
-          menu={{ secondary: true, pointing: true }}
-          panes={panes}
-          className={styles.tabs}
-        />
+        <Separator height={50} />
+        <Container>
+          <InfoUser />
+        </Container>
+        <Separator height={50} />
       </BasicLayout>
     </>
   );

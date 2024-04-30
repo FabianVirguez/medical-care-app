@@ -1,0 +1,59 @@
+@import "~/src/scss/index.scss";
+
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  height: 100%;
+  margin: 1rem;
+  padding: 1rem 2rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+.item {
+  border: 1px solid $border-tertiary;
+  border-radius: 10px;
+  margin: 1rem;
+  min-height: 80px;
+  max-width: 420px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $background-tertiary;
+  }
+
+  a.toAction {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    i {
+      align-self: center;
+      justify-self: center;
+    }
+    span {
+      align-self: center;
+      justify-self: self-start;
+    }
+  }
+
+  span {
+    color: $text-secondary;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+  }
+
+  i {
+    font-size: 2.5rem;
+  }
+}

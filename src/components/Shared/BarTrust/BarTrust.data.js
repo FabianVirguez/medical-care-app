@@ -1,17 +1,17 @@
 export const data = [
   {
-    icon: "truck",
-    title: "Súper rápido",
-    description: "Entrega en 24/48 horas",
+    icon: "stethoscope",
+    title: "Profesionales especializados",
+    description: "24 horas / 7 días",
   },
   {
-    icon: "shield",
-    title: "Fiable y seguro",
-    description: "Más de 10,000 juegos",
+    icon: "hospital",
+    title: "Gestiona tus citas medicas",
+    description: "Desde tu móvil o PC",
   },
   {
-    icon: "wechat",
+    icon: "user md",
     title: "Atención al cliente",
-    description: "Agente disponible 24/7",
+    description: "Agentes disponible 24/7",
   },
 ];

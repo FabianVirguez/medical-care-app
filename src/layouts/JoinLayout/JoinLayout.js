@@ -18,7 +18,7 @@ export function JoinLayout(props) {
     <div className={styles.container}>
       <div className={styles.topBar}>
         <Link href="/">
-          <Image src="/images/logo.png" alt="Gaming" />
+          <Image src="/images/logo-medical-without-bg.png" alt="logo" />
         </Link>
 
         <Link href="/">

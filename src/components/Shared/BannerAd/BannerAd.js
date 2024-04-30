@@ -7,9 +7,9 @@ export function BannerAd(props) {
 
   return (
     <div className={styles.container}>
-      <Container className={styles.containerImage}>
-        <Image src={image} />
-      </Container>
+      <div className={styles.containerImage}>
+        <Image src={image} alt="image banner" />
+      </div>
 
       <div className={styles.infoContainer}>
         <Container>

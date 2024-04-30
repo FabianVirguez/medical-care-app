@@ -16,49 +16,32 @@ export default function HomePage() {
       <Seo />
 
       <BasicLayout>
-        <Home.BannerLastGamePublished />
-
         <Separator height={100} />
-
-        <Container>
-          <Home.LatestGames title="Ultimos lanzamientos" />
-        </Container>
-
-        <Separator height={100} />
-
-        <BarTrust />
-
-        <Separator height={100} />
-
-        <Container>
-          <Home.LatestGames
-            title="PlayStation"
-            limit={3}
-            platformId={platformsId.playstation}
-          />
-        </Container>
-
-        <Separator height={100} />
-
-        <BannerAd
-          title="Registrate y obten los mejores precios"
-          subtitle="¡Compara con otros juegos y elige el tuyo!"
-          btnTitle="Entrar ahora"
-          btnLink="/account"
-          image="/images/img01.png"
+        <Home.BannerFirst
+          src="/images/home-banner-first.png"
+          alt="banner first"
         />
 
         <Separator height={50} />
 
-        <Container>
-          <Home.LatestGames
-            title="Xbox"
-            limit={3}
-            platformId={platformsId.xbox}
-          />
-        </Container>
+        <BarTrust />
 
-        <Separator height={100} />
+        <Separator height={50} />
+
+        <Home.BannerFirst
+          src="/images/home-banner-2x.png"
+          alt="banner second"
+        />
+
+        <Separator height={50} />
+
+        <BannerAd
+          title="Registrate para obtener el mejor servicio para tu salud"
+          subtitle="¡Puedes solicitar cita de inmediato!"
+          btnTitle="Ingresa ahora"
+          btnLink="/join/sign-in"
+          image="/images/home-banner-3x.jpg"
+        />
       </BasicLayout>
     </>
   );
